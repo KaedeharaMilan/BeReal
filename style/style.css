@@ -1,0 +1,694 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #131313;
+}
+/* css-nya cursor */
+.cursor-dot {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+}
+.cursor-outline {
+    width: 75px;
+    height: 75px;
+    border: 2px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.cursor-card {
+    display: flex;
+    position: relative;
+    z-index: 999;
+}
+
+.nav-parent{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+h1.logo-bereal {
+    color: #ffffff;
+    margin-left: 2vh;
+}
+
+.nav-menu li {
+    margin-top: 2rem;
+    padding-left: 2vh   ;
+}
+
+.nav-menu a{
+    font-family: "Plus Jakarta Sans";
+    font-weight: 100;
+    text-decoration: none;
+    font-style: italic;
+    color: #ffffff;
+    margin-right: 2vh;
+}
+
+/* Add media queries for different screen sizes */
+@media only screen and (max-width: 768px) {
+    /* Adjust layout and styling for screens up to 768px wide */
+    .nav-parent {
+      flex-direction: column;
+    }
+    h1.logo-bereal {
+      margin-left: 1vh;
+    }
+    .nav-menu li {
+      margin-top: 1rem;
+      padding-left: 1vh;
+    }
+    .nav-menu a {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    /* Adjust layout and styling for screens up to 480px wide */
+    .nav-parent {
+      flex-direction: column;
+    }
+    h1.logo-bereal {
+      margin-left: 0.5vh;
+    }
+    .nav-menu li {
+      margin-top: 0.5rem;
+      padding-left: 0.5vh;
+    }
+    .nav-menu a {
+      font-size: 1rem;
+    }
+  }
+
+.landing-pad {
+    padding-top: 10vh;
+}
+
+.head-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.satisfied-your-eyes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.satisfied-your-eyes .satisfied {
+    color: #ffffff;
+    font-family: "Clash Display";
+    font-weight: 400;
+    font-size: 10vh;
+}
+
+.satisfied-your-eyes .your-eyes {
+    margin-top: 5vh;
+    color: #5EFE5B;
+    font-family: "Press Start 2P";
+    font-size: 7vh;
+}
+
+.by-providing-yourself {
+    color: #ffffff;
+    font-family: "Clash Display";
+    font-weight: 600;
+    font-size: 10vh;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    padding-left: 10vh;
+    margin-top: -3vh;
+}
+
+.with-cool-stuff {
+    color: #ffffff;
+    font-family: "Clash Display";
+    font-weight: 200;
+    font-size: 7vh;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    padding-right: 3vw;
+    margin-top: -3vh;
+    z-index: 5;
+    
+    margin-left: 8vw;
+}
+
+.with-cool-stuff img {
+    margin-top: -17rem;
+    margin-left: -3rem;
+    width: 16vw;
+    height: 15vw;
+}
+
+.img-of-the-landing-pad {
+    z-index: 20;
+    margin-top: -26vw;
+    margin-left: 3vw;
+}
+
+.img-of-the-landing-pad img {
+    z-index: 20;
+
+    margin-top: 2rem;
+    margin-left: 1rem;
+
+    width: 39vw;
+    height: 33vw;   
+}
+
+.description-section {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+}
+
+.desc-text {
+    color: #ffffff;
+    width: 20vw;
+    font-family: "Bricolage Grotesque";
+    font-weight: 100;
+    text-align: justify;
+
+    margin-top: -19rem;
+    margin-left: -7rem;
+}
+
+.desc-button {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: -10.5rem;
+}
+
+.about-us {
+    background-color: #5EFE5B;
+    width: 10rem;
+    height: 3rem;
+    border: 0rem;
+    border-radius: 20rem;
+}
+
+
+.about-us a{
+    color: #131313;
+    font-family: "Bricolage Grotesque";
+    text-decoration: none;
+    border: 0rem;
+    border-radius: 20rem;
+}
+
+.gallery {
+    background-color: transparent;
+    width: 10rem;
+    height: 3rem;
+    border-color: #5EFE5B;
+    border-width: 3px;
+    border-radius: 20rem;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.gallery:hover {
+    background-color: #5EFE5B;
+    color: #000;
+    transform: scale(1);
+}
+
+
+.gallery a{
+    color: #ffffff;
+    font-family: "Bricolage Grotesque";
+    text-decoration: none;
+    border: 0rem;
+    border-radius: 20rem;
+}
+
+/* Add media queries for different screen sizes */
+@media only screen and (max-width: 1200px) {
+    /* Adjust layout and styling for screens up to 1200px wide */
+    .satisfied-your-eyes {
+      flex-direction: column;
+    }
+    .satisfied-your-eyes .satisfied {
+      font-size: 8vh;
+    }
+    .satisfied-your-eyes .your-eyes {
+      font-size: 6vh;
+    }
+    .by-providing-yourself {
+      font-size: 8vh;
+    }
+    .with-cool-stuff {
+      font-size: 6vh;
+    }
+    .img-of-the-landing-pad img {
+      width: 30vw;
+      height: 25vw;
+    }
+    .description-section {
+      margin-top: 1rem;
+    }
+    .desc-text {
+      width: 30vw;
+    }
+    .gallery {
+      width: 8rem;
+      height: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    /* Adjust layout and styling for screens up to 900px wide */
+    .satisfied-your-eyes {
+      flex-direction: column;
+    }
+    .satisfied-your-eyes .satisfied {
+      font-size: 6vh;
+    }
+    .satisfied-your-eyes .your-eyes {
+      font-size: 4vh;
+    }
+    .by-providing-yourself {
+      font-size: 6vh;
+    }
+    .with-cool-stuff {
+      font-size: 4vh;
+    }
+    .img-of-the-landing-pad img {
+      width: 25vw;
+      height: 20vw;
+    }
+    .description-section {
+      margin-top: 0.5rem;
+    }
+    .desc-text {
+      width: 25vw;
+    }
+    .gallery {
+      width: 6rem;
+      height: 1.5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Adjust layout and styling for screens up to 600px wide */
+    .satisfied-your-eyes {
+      flex-direction: column;
+    }
+    .satisfied-your-eyes .satisfied {
+      font-size: 4vh;
+    }
+    .satisfied-your-eyes .your-eyes {
+      font-size: 2vh;
+    }
+    .by-providing-yourself {
+      font-size: 4vh;
+    }
+    .with-cool-stuff {
+      font-size: 2vh;
+    }
+    .img-of-the-landing-pad img {
+      width: 20vw;
+      height: 15vw;
+    }
+    .description-section {
+      margin-top: 0.2rem;
+    }
+    .desc-text {
+      width: 20vw;
+    }
+    .gallery {
+      width: 4rem;
+      height: 1rem;
+    }
+  }
+
+.sec-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elevate-your-styles {
+    margin-top: 13rem;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Plus Jakarta Sans";
+    font-style: italic;
+}
+
+.elevate-your {
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 5rem;
+}
+
+.styles {
+    color: #5EFE5B;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+.elevate-your-styles img{
+    width: 17rem;
+    height: 8rem;
+
+    margin-top: -2rem;
+    margin-left: 1rem;
+}
+
+.with-our-service-card {
+    margin-top: -5rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.with-our-service {
+    font-family: "Plus Jakarta Sans";
+    font-style: italic;
+    font-weight: 100;
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.image-of-glasses-mid-guy img {
+    margin-left: -10rem;
+    margin-top: -1rem;
+
+    width: 18rem;
+    height: 15rem;
+}
+
+.long-arrow-and-smily-flower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7rem;
+}
+
+.long-arrow {
+    display: flex;
+    width: 80rem;
+    height: 25rem;
+    margin-left: 2rem;
+}
+
+.smily-flower {
+    display: flex;
+    width: 15rem;
+    height: 15rem;
+
+    margin-left: -15rem;
+}
+
+.mocked-up-bereal {
+    margin-top: -30rem;
+    overflow-y: visible;
+}
+
+.mocked-up-bereal img{
+    width: 40rem;
+    height: 50rem;
+}
+
+.company-profile {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20rem;
+}
+
+.company-profile img {
+    margin-top: -2rem;
+    padding-right: 2rem;
+    margin-left: -2rem;
+    width: 50rem;
+    height: 50rem;
+}
+
+.title-boss-company-pfp {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.lets-get-to-know {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -15rem;
+}
+
+.lets-get-to-know .l {
+  font-family: "Great Vibes";
+  font-size: 5rem;  
+  font-weight: 100;
+}
+
+.lets-get-to-know .ets-get-to {
+    font-family: "Bricolage Grotesque";
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.with-us {
+    font-family: "Press Start 2P";
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.know {
+    font-family: "Bricolage Grotesque";
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.know-with-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: -5rem;
+}
+
+.desc-1 {
+    width: 30rem;
+    height: fit-content;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-family: "Bricolage Grotesque";
+}
+
+.desc-2 {
+    width: 30rem;
+    height: fit-content;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-family: "Bricolage Grotesque";
+}
+
+.pfp-button {
+    margin-top: 1rem;
+}
+
+.milans {    
+    background-color: #5646FF;
+    width: 12rem;
+    height: 4rem;
+    border: 0rem;
+    border-radius: 20rem;
+}
+
+.milans a{
+    color: #ffffff;
+    font-family: "Bricolage Grotesque";
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.ahnafs {    
+    background-color: #E7803A;
+    width: 12rem;
+    height: 4rem;
+    border: 0rem;
+    border-radius: 20rem;
+    padding-left: 1rem;
+}
+
+.ahnafs a{
+    color: #ffffff;
+    font-family: "Bricolage Grotesque";
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+footer{
+    width: 100%;
+    position: flex;
+    margin-top: 10vh;
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+  .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  
+  .col{
+    flex-basis: 25%;
+    padding: 10px;
+  }
+  
+  .col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+  }
+  
+  .logo-bereal-footer{
+    font-size: 3rem;
+    margin-bottom: 30px;
+
+  }
+  
+  .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+  }
+  
+  ul li{
+    list-style: none;
+    margin-bottom: 12px;
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+  }
+  
+  form .far{
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+  
+  form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  form button .fas{
+  font-size: 16px;
+  color: #ccc;
+  }
+  
+  social-icon .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
+  
+  .copyright{
+    text-align: center;
+  }
+  
+  .underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+  }
+
+  
